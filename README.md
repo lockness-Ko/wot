@@ -2,6 +2,8 @@
 
 A docker image for hiding yourself using tor as a proxy and disk encryption :)
 
+!()[images/bashrc.png]
+
 ## > **Install**
 
 To install simply run clone the repo and type `docker build -t wot .`:
