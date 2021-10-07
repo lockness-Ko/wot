@@ -8,8 +8,7 @@ A docker image for hiding yourself using tor as a proxy and disk encryption :)
 
 To install simply run clone the repo and type `docker build -t wot .`:
 
-**YOU MUST HAVE TOR PROXY RUNNING ON PORT 9050 ON LOCALHOST**
-Adding support for not needing it in the future :)
+**YOU MUST HAVE TOR PROXY RUNNING ON PORT 9050 ON LOCALHOST FOR THE COFFEE VERSION**
 
 ```bash
 cd /opt
@@ -21,10 +20,13 @@ cd wot
 ## > **Releases**
 
  - Version 1.0
-   - coffee: `docker pull ghcr.io/lockness-ko:coffee`
+   - coffee: `docker pull ghcr.io/lockness-ko/wot:coffee`
+ - Version 1.1
+   - wot:cookie: `docker pull ghcr.io/lockness-ko/wot:cookie`
+   - wottor:cookie: `docker pull ghcr.io/lockness-ko/wottor:cookie`
 
 To pull a release in docker run:
 
 ```bash
-docker pull ghcr.io/lockness-ko:release-name
+docker pull ghcr.io/lockness-ko/wot:release-name
 ```
