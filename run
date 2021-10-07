@@ -1,0 +1,5 @@
+#! /bin/bash
+
+# Run the container on the host network to be able to connect to the locally running tor proxy
+docker run --rm --net host -it ghrc.io/lockness-ko/wot:latest
+# Using the --rm flag to remove the container once you exit
