@@ -20,10 +20,10 @@ cd wot
 ## > **Releases**
 
  - Version 1.0
-   - coffee: `docker pull ghcr.io/lockness-ko/wot:coffee`
+   - wot :coffee: `docker pull ghcr.io/lockness-ko/wot:coffee`
  - Version 1.1
-   - wot:cookie\: `docker pull ghcr.io/lockness-ko/wot:cookie`
-   - wottor:cookie\: `docker pull ghcr.io/lockness-ko/wottor:cookie`
+   - wot :cookie: `docker pull ghcr.io/lockness-ko/wot:cookie`
+   - wottor :cookie: `docker pull ghcr.io/lockness-ko/wottor:cookie`
 
 To pull a release in docker run:
 
