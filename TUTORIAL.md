@@ -47,8 +47,7 @@ If everything is successful, you should see the following prompt!
 Now that we have it installed you can check if tor is working by typing:
 
 ```bash
-root@cs-277627719721-default-boost-vb4rv:~# curl https://check.torproject.org/api/ip
-{"IsTor":true,"IP":"104.244.xxx.xxx"}
+curl https://check.torproject.org/api/ip
 ```
 
 Great! Now we know that all our connections will be anonymous. We can now go and browser the web using `lynx`. 
