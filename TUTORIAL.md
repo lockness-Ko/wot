@@ -67,6 +67,6 @@ Thanks for following through with this tutorial :)
 
 You can donate or star the repo if u want :)
 
-[![Github Sponsorship]()](https://github.com/sponsors/lockness-Ko)
+[:heart: Sponsor](https://github.com/sponsors/lockness-Ko)
 
 Hope this repo is useful!
