@@ -27,7 +27,9 @@ cd wot
 
 Here is a cool button that you can use to have a go at this app in the google cloud shell!!
 
-[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/lockness-Ko/wot&tutorial=README.md)
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/lockness-Ko/wot&tutorial=TUTORIAL.md)
+
+**DO NOT CHOOSE EPHEMERAL MODE (if possible) see [below](#NOTE) for details**
 
 How to make it work:
  - When you first click the link, it will clone the repo and then ask you for a project. 
@@ -36,6 +38,10 @@ How to make it work:
 
 ![](images/gcloud1.png)
 ![](images/gcloud2.png)
+
+## NOTE
+
+The second time I tried this, the gcloud console worked and didn't ask for a project. I think the reason was that I was in ephemeral mode.
 
 ## > **Releases**
 
