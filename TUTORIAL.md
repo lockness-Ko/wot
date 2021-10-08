@@ -22,5 +22,22 @@ bashrc      images   motd              README.md  run-windows.bat  TUTORIAL.md
 Dockerfile  LICENSE  proxychains.conf  run-linux  tor
 ```
 
-In the repo we can see a `Dockerfile` and a `tor` folder. The dockerfile is what we use to build the wot docker image and inside the tor folder is the dockerfile for the wottor image.
+In the repo we can see a `Dockerfile` and a `tor` folder. The dockerfile is what we use to build the wot docker image and inside the tor folder is the dockerfile for the wottor image. There are also the `run-` scripts that we can use to run wot on linux and windows.
 
+To run wot in the gcloud console the first thing we need to do is make the `run-linux` file executable:
+
+```bash
+chmod +x ./run-linux
+```
+
+Then, we can simply run it by typing the following command!
+
+```bash
+./run-linux
+```
+
+![](images/gcloud2.png)
+
+If everything is successful, you should see the following prompt!
+
+![](images/tut.png)
