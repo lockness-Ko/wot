@@ -22,7 +22,7 @@ git clone https://github.com/lockness-Ko/wot.git
 cd wot
 ./run
 ```
-
+ 
 ### > **Google Cloud Demo** 
 
 Here is a cool button that you can use to have a go at this app in the google cloud shell!!
