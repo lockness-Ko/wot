@@ -8,6 +8,7 @@
 A docker image for hiding yourself using tor as a proxy and disk encryption :)
 
 ![](images/bashrc.png)
+![](images/bashrc2.png)
 
 ## > **Install**
 
