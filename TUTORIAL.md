@@ -56,7 +56,7 @@ Great! Now we know that all our connections will be anonymous. We can now go and
 I have aliased `lynx` to have a bunch of privacy setting turned on by default, all you need to do to bypass the alias is run the absolute path: 
 
 ```bash
-`which lynx`
+`which lynx` somesite.com
 ```
 
 `lynx` by default will automatically navigate to the tor check page. You can press m and then y to go to the duckduckgo lite browser and start browsing or press g and then type a url to go to a url!
