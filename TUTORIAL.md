@@ -57,4 +57,16 @@ I have aliased `lynx` to have a bunch of privacy setting turned on by default, a
 
 ```bash
 `which lynx`
-```. 
+```
+
+`lynx` by default will automatically navigate to the tor check page. You can press m and then y to go to the duckduckgo lite browser and start browsing or press g and then type a url to go to a url!
+
+## > **Done!**
+
+Thanks for following through with this tutorial :)
+
+You can donate or star the repo if u want :)
+
+[![Github Sponsorship](img/github_sponsor_btn.svg)](https://github.com/sponsors/lockness-Ko)
+
+Hope this repo is useful!
