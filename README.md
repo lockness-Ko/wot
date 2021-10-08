@@ -29,6 +29,14 @@ Here is a cool button that you can use to have a go at this app in the google cl
 
 [![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/lockness-Ko/wot&tutorial=README.md)
 
+How to make it work:
+ - When you first click the link, it will clone the repo and then ask you for a project. 
+ - If you have a gcloud account already and a project setup, you can continue
+ - Most people will not have an account, in this case just press Ctrl+C twice to exit out of the install and then follow the install instructions below:
+
+![](images/gcloud1.png)
+![](images/gcloud2.png)
+
 ## > **Releases**
 
  - Version 1.0
