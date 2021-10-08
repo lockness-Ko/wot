@@ -23,6 +23,12 @@ cd wot
 ./run
 ```
 
+### > **Google Cloud Demo** 
+
+Here is a cool button that you can use to have a go at this app in the google cloud shell!!
+
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)
+
 ## > **Releases**
 
  - Version 1.0
