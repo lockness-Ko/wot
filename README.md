@@ -1,7 +1,7 @@
 # WOT (without a trace)
 
+![GitHub Repo stars](https://img.shields.io/github/stars/lockness-Ko/wot#8e0ac7)
 ![GitHub issues](https://img.shields.io/github/issues/lockness-Ko/wot?color=%238b20e3)
-![GitHub Repo stars](https://img.shields.io/github/stars/lockness-Ko/wot#8e0ac7?color=%238e0ac7&style=plastic)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/lockness-Ko/wot?color=%238e0ac7)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/lockness-Ko/wot?color=%238b20e3)
 
