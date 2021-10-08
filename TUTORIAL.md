@@ -41,3 +41,16 @@ Then, we can simply run it by typing the following command!
 If everything is successful, you should see the following prompt!
 
 ![](images/tut.png)
+
+## > **Step 3 - What now??**
+
+Now that we have it installed you can check if tor is working by typing:
+
+```bash
+root@cs-277627719721-default-boost-vb4rv:~# curl https://check.torproject.org/api/ip
+{"IsTor":true,"IP":"104.244.xxx.xxx"}
+```
+
+Great! Now we know that all our connections will be anonymous. We can now go and browser the web using `lynx`. 
+
+I have aliased `lynx` to have a bunch of privacy setting turned on by default, all you need to do to bypass the alias is run the absolute path: ``which lynx``. 
