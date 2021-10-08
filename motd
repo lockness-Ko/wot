@@ -1,0 +1,17 @@
+WOT (without a trace)
+
+Welcome!
+
+Here are some useful commands:
+Web browser
+ - `lynx`
+
+Networking
+ - `nc`
+ - `ncat`
+ - `wget`
+ - `curl`
+
+Text editing
+ - `nano`
+ - `vi`
