@@ -67,6 +67,6 @@ Thanks for following through with this tutorial :)
 
 You can donate or star the repo if u want :)
 
-[![Github Sponsorship](img/github_sponsor_btn.svg)](https://github.com/sponsors/lockness-Ko)
+[![Github Sponsorship](https://github.com/lockness-Ko/wot/funding_links?fragment=1)](https://github.com/sponsors/lockness-Ko)
 
 Hope this repo is useful!
