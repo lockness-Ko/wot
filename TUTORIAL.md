@@ -53,4 +53,8 @@ root@cs-277627719721-default-boost-vb4rv:~# curl https://check.torproject.org/ap
 
 Great! Now we know that all our connections will be anonymous. We can now go and browser the web using `lynx`. 
 
-I have aliased `lynx` to have a bunch of privacy setting turned on by default, all you need to do to bypass the alias is run the absolute path: ``which lynx``. 
+I have aliased `lynx` to have a bunch of privacy setting turned on by default, all you need to do to bypass the alias is run the absolute path: 
+
+```bash
+`which lynx`
+```. 
