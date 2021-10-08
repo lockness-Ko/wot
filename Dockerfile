@@ -15,7 +15,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt install vim -y
 RUN wget https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/ncat -O /usr/bin/ncat
 
 # Final setup stuff!
-RUN ln -s /dev/null /root/.wget-hsts
 RUN wget https://raw.githubusercontent.com/lockness-Ko/wot/main/bashrc -O /root/.bashrc
 RUN wget https://raw.githubusercontent.com/lockness-Ko/wot/main/motd -O /etc/motd
 
