@@ -27,7 +27,7 @@ cd wot
 
 Here is a cool button that you can use to have a go at this app in the google cloud shell!!
 
-[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/lockness-Ko/wot&tutorial=README.md)
 
 ## > **Releases**
 
