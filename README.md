@@ -5,7 +5,7 @@
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/lockness-Ko/wot?color=%238e0ac7)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/lockness-Ko/wot?color=%238b20e3)
 
-A docker image for hiding yourself using tor as a proxy and disk encryption :)
+A docker image for hiding yourself using tor as a proxy :)
 
 ![](images/bashrc.png)
 ![](images/bashrc2.png)
@@ -50,6 +50,8 @@ The second time I tried this, the gcloud console worked and didn't ask for a pro
  - Version 1.1
    - wot :cookie: `docker pull ghcr.io/lockness-ko/wot:cookie`
    - wottor :cookie: `docker pull ghcr.io/lockness-ko/wottor:cookie`
+ - Version 1.1 - Large
+   - wot :salt: `docker pull ghcr.io/lockness-ko/wottor:salt`
 
 To pull a release in docker run:
 
