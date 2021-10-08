@@ -1,5 +1,8 @@
 # WOT (without a trace)
 
+![GitHub issues](https://img.shields.io/github/issues/lockness-Ko/wot?color=%238b20e3)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/lockness-Ko/wot?color=%238b20e3)
+
 A docker image for hiding yourself using tor as a proxy and disk encryption :)
 
 ![](images/bashrc.png)
