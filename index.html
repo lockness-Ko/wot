@@ -1,5 +1,11 @@
 <html>
+  <head>
+  </head>
   <body>
-    Hello World
+    <div id="content"></div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      fetch("https://raw.githubusercontent.com/lockness-Ko/wot/main/README.md").then(x=>x.text()).then(y=>document.getElementById('content').innerHTML =marked(y))
+    </script>
   </body>
 </hmtl>
