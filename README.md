@@ -46,12 +46,16 @@ The second time I tried this, the gcloud console worked and didn't ask for a pro
 ## > **Releases**
 
  - Version 1.0
-   - wot :coffee: `docker pull ghcr.io/lockness-ko/wot:coffee`
+   - wot ☕ `docker pull ghcr.io/lockness-ko/wot:coffee`
  - Version 1.1
-   - wot :cookie: `docker pull ghcr.io/lockness-ko/wot:cookie`
-   - wottor :cookie: `docker pull ghcr.io/lockness-ko/wottor:cookie`
+   - wot 🍪 `docker pull ghcr.io/lockness-ko/wot:cookie`
+   - wottor 🍪 `docker pull ghcr.io/lockness-ko/wottor:cookie`
  - Version 1.1 - Large
-   - wot :salt: `docker pull ghcr.io/lockness-ko/wottor:salt`
+   - wot 🧂 `docker pull ghcr.io/lockness-ko/wot:salt`
+ - Version 1.1 - raspberry pi!
+   - wot 🍓 `docker pull ghcr.io/lockness-ko/wot:raspberry`
+  - Version 1.2
+   - wot 🧀 `docker pull ghcr.io/lockness-ko/wot:cheese`
 
 To pull a release in docker run:
 
