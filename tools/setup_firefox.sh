@@ -18,7 +18,7 @@ pushd $HOME/bin
 curl -L -o firefox.tar.bz2 https://ftp.mozilla.org/pub/firefox/releases/$FIREFOX_VERSION/linux-x86_64/en-US/firefox-$FIREFOX_VERSION.tar.bz2
 bzip2 -d firefox.tar.bz2
 tar xf firefox.tar
-chmod +x firefox
+ls
 popd
 
 firefox --version
