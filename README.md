@@ -20,7 +20,7 @@ To install simply run clone the repo and type `docker build -t wot .`:
 cd /opt
 git clone https://github.com/lockness-Ko/wot.git
 cd wot
-./run
+./run-linux
 ```
 
 ### > **Google Cloud Demo** 
