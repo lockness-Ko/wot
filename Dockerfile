@@ -4,7 +4,7 @@ FROM ubuntu:21.04
 RUN apt update -y
 RUN DEBIAN_FRONTEND=noninteractive apt install -yq proxychains
 RUN apt install wget -y
-ADD proxychains.conf /etc/proxychains.conf
+ADD ./tools/proxychains.conf /etc/proxychains.conf
 RUN apt install curl -y
 RUN DEBIAN_FRONTEND=noninteractive apt install lynx -y
 RUN apt install -y netcat-openbsd
@@ -19,8 +19,12 @@ RUN DEBIAN_FRONTEND=noninteractive apt install python-is-python3 -y
 RUN wget https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/ncat -O /usr/bin/ncat
 
 # Final setup stuff!
-ADD bashrc /root/.bashrc
-ADD motd /etc/motd
+ADD ./tools/bashrc /root/.bashrc
+ADD ./tools/motd /etc/motd
+
+# Add browsh, this is less secure than lynx as it runs firefox (I will add noscript later) headlessly but it looks a lot prettier and runs js sites
+ADD ./tools/browsh /usr/bin/browsh
+RUN chmod +x /usr/bin/browsh
 
 # Install useful OSINT github repositories
 RUN cd /root && git clone https://github.com/Datalux/Osintgram.git
