@@ -1,1 +1,12 @@
+# Finally a docker compose file!
+version: "3.9"
 
+services:
+  wottor:
+    image: ghcr.io/lockness-ko/wottor:cookie
+    ports:
+      - "5090:5090"
+  wot:
+    image: ghcr.io/lockness-ko/wottor:cheese
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
