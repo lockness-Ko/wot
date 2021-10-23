@@ -43,6 +43,13 @@ How to make it work:
 
 The second time I tried this, the gcloud console worked and didn't ask for a project. I think the reason was that I was in ephemeral mode.
 
+## > **Tools**
+
+In the latest version (🧀 at this time) I have added some tools! Here is an updated list of tools with links to the github repos
+ - [Osintgram](https://github.com/Datalux/Osintgram)	|	Instagram OSINT tool
+ - [binwalk](https://github.com/ReFirmLabs/binwalk)		|	Reverse engineering tool
+ - [twint](https://github.com/twintproject/twint)		|	Twitter OSINT tool
+
 ## > **Releases**
 
  - Version 1.0
