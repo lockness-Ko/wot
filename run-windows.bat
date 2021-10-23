@@ -4,5 +4,5 @@
 docker run --rm -dp 5090:5090 --name tor ghcr.io/lockness-ko/wottor:cookie
 
 :: Run the container on the host network to be able to connect to the locally running tor proxy
-docker run --rm --net host -it ghcr.io/lockness-ko/wot:cookie
+docker run --rm --net host -it ghcr.io/lockness-ko/wot:cheese
 :: Using the --rm flag to remove the container once you exit
