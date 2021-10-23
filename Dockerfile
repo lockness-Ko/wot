@@ -14,19 +14,11 @@ RUN DEBIAN_FRONTEND=noninteractive apt install git -y
 RUN DEBIAN_FRONTEND=noninteractive apt install python3 -y
 RUN DEBIAN_FRONTEND=noninteractive apt install python3-pip -y
 RUN DEBIAN_FRONTEND=noninteractive apt install python-is-python3 -y
-RUN DEBIAN_FRONTEND=noninteractive apt install packagekit-gtk3-module -y
 
 # Setup lynx alias
 RUN wget https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/ncat -O /usr/bin/ncat
 
-# Add browsh, this is less secure than lynx as it runs firefox (I will add noscript later) headlessly but it looks a lot prettier and runs js sites
-ADD ./tools/browsh /usr/bin/browsh
-RUN chmod +x /usr/bin/browsh
-
-# Apparently environment variables aren't specified
-ENV PATH="/root/bin/firefox:${PATH}"
-ADD ./tools/setup_firefox.sh /tmp/setup_firefox.sh
-RUN chmod +x /tmp/setup_firefox.sh && /tmp/setup_firefox.sh
+# browsh doest not work currently!
 
 # Install useful OSINT github repositories
 RUN cd /root && git clone https://github.com/Datalux/Osintgram.git
