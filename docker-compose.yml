@@ -7,6 +7,6 @@ services:
     ports:
       - "5090:5090"
   wot:
-    image: ghcr.io/lockness-ko/wottor:cheese
+    image: ghcr.io/lockness-ko/wot:cheese
     stdin_open: true # docker run -i
     tty: true        # docker run -t
