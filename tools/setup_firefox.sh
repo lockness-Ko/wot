@@ -3,21 +3,13 @@
 #############################
 # THIS IS STOLEN FROM https://github.com/browsh-org/browsh/blob/master/interfacer/contrib/setup_firefox.sh
 # Check it out :)
+# (this is slightly modified so that it doesn't rely on travis.yml)
 #############################
 set -ex
 
-if [ ! -f .travis.yml ]; then
-  PROJECT_ROOT=$(git rev-parse --show-toplevel)
-else
-  PROJECT_ROOT=.
-fi
-
-line=$(grep 'firefox: "' < $PROJECT_ROOT/.travis.yml)
+line='  firefox: "67.0.1"'
 version=$(echo $line | grep -o '".*"' | cut -d " " -f 1 | sed 's/"//g')
 
-# Firefox is needed both for testing in Travis and embedding in the Docker
-# image used by the Browsh as a Service platform. So we need to be able to
-# give a specific and consistent version pin.
 FIREFOX_VERSION=$version
 
 mkdir -p $HOME/bin
