@@ -8,7 +8,7 @@
 # Using the --rm flag to remove the container once you exit
 
 # Use the new docker compose file to run the containers!
-docker-compose up -d
+docker-compose up --rm -d
 
 # Run `pbash` (proxychains bash)
 docker-compose exec wot pbash
