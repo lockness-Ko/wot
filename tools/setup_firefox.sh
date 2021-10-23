@@ -5,6 +5,8 @@
 # Check it out :)
 # (this is slightly modified so that it doesn't rely on travis.yml)
 #############################
+apt install libdbus-glib-1-2
+
 set -ex
 
 line='  firefox: "67.0.1"'
