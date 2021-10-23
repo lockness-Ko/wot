@@ -22,7 +22,7 @@ RUN wget https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x
 ADD ./tools/browsh /usr/bin/browsh
 RUN chmod +x /usr/bin/browsh
 # Apparently environment variables aren't specified
-ENV PATH="/usr/bin/firefox:${PATH}"
+ENV PATH="${HOME}/bin/firefox:${PATH}"
 ADD ./tools/setup_firefox.sh /tmp/setup_firefox.sh
 RUN chmod +x /tmp/setup_firefox.sh && /tmp/setup_firefox.sh
 
