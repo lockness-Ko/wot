@@ -10,7 +10,7 @@ Conduct forensic investigation of suspicious domains, websites and other dangero
 ![](images/bashrc.png)
 ![](images/bashrc2.png)
 
-## > **Install**
+## > **Install** 
 
 To install simply run clone the repo and type `docker build -t wot .`:
 
