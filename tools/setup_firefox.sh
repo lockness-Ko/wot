@@ -6,6 +6,7 @@
 # (this is slightly modified so that it doesn't rely on travis.yml)
 #############################
 apt install libdbus-glib-1-2
+apt install libxt6
 
 set -ex
 
