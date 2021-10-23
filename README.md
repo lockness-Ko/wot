@@ -11,7 +11,7 @@ Conduct forensic investigation of suspicious domains, websites and other dangero
 ![](images/bashrc2.png)
 
 ## Important stuff
- - browsh either takes a long time to start or just doesn't work :/
+ - browsh either takes a long time to start or just doesn't work :/ [https://github.com/browsh-org/browsh/issues/121](https://github.com/browsh-org/browsh/issues/121)
 
 ## > **Install** 
 
