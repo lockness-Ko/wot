@@ -54,7 +54,7 @@ The second time I tried this, the gcloud console worked and didn't ask for a pro
    - wot 🧂 `docker pull ghcr.io/lockness-ko/wot:salt`
  - Version 1.1 - raspberry pi!
    - wot 🍓 `docker pull ghcr.io/lockness-ko/wot:raspberry`
-  - Version 1.2
+ - Version 1.2
    - wot 🧀 `docker pull ghcr.io/lockness-ko/wot:cheese`
 
 To pull a release in docker run:
