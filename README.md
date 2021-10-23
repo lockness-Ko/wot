@@ -8,7 +8,7 @@
 Conduct forensic investigation of suspicious domains, websites and other dangerous thing without the fear of being infected! A docker image for hiding yourself using tor as a proxy :)
 
 ![](images/bashrc.png)
-![](images/bashrc2.png)
+![](images/bashrc2.png) 
 
 ## > **Install**
 
