@@ -1,5 +1,5 @@
 # Finally a docker compose file!
-version: "3.9"
+version: "3"
 
 services:
   wottor:
