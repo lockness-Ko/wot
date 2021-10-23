@@ -21,6 +21,7 @@ RUN wget https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x
 # Add browsh, this is less secure than lynx as it runs firefox (I will add noscript later) headlessly but it looks a lot prettier and runs js sites
 ADD ./tools/browsh /usr/bin/browsh
 RUN chmod +x /usr/bin/browsh
+
 # Apparently environment variables aren't specified
 ENV PATH="${HOME}/bin/firefox:${PATH}"
 ADD ./tools/setup_firefox.sh /tmp/setup_firefox.sh
