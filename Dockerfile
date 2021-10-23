@@ -27,5 +27,9 @@ RUN cd /root && git clone https://github.com/Datalux/Osintgram.git
 RUN cd /root && git clone https://github.com/twintproject/twint.git && cd twint && pip3 install . -r requirements.txt
 RUN cd /root && git clone https://github.com/ReFirmLabs/binwalk.git && cd binwalk && python3 setup.py install
 
+RUN echo "#! /bin/bash" > /bin/pbash
+RUN echo "/usr/bin/proxychains /bin/bash -i" >> /bin/pbash
+RUN chmod +x /bin/pbash
+
 # Run bash with proxychains for anonymity ;)
-CMD ["/usr/bin/proxychains", "/bin/bash"]
+CMD ["/bin/pbash"]
