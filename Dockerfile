@@ -30,11 +30,11 @@ RUN cd /root && git clone https://github.com/ReFirmLabs/binwalk.git && cd binwal
 
 # This is a cool hosts file (blocks ads and other stuff) and other cool files
 ADD ./tools/hosts /etc/hosts
-ADD ./tools/bashrc /root/.bashrc
+ADD ./tools/zshrc /root/.zshrc
 ADD ./tools/motd /etc/motd
 
 RUN echo "#! /bin/bash" > /bin/pbash
-RUN echo "/usr/bin/proxychains /bin/bash -i" >> /bin/pbash
+RUN echo "/usr/bin/proxychains /bin/zsh" >> /bin/pbash
 RUN chmod +x /bin/pbash
 
 # Run bash with proxychains for anonymity ;)
