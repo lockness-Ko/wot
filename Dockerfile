@@ -30,7 +30,7 @@ RUN cd /root && git clone https://github.com/ReFirmLabs/binwalk.git && cd binwal
 RUN DEBIAN_FRONTEND=noninteractive apt -y install apt-transport-https ca-certificates curl gnupg2 software-properties-common
 RUN curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
 # not sure if i need to specify DEBIAN_FRONTEND=noninteractive here, just doing it coz i can
-RUN DEBIAN_FRONTEND=noninteractive add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
+RUN DEBIAN_FRONTEND=noninteractive add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 RUN DEBIAN_FRONTEND=noninteractive apt update
 RUN DEBIAN_FRONTEND=noninteractive apt install docker-ce -y
 
