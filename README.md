@@ -11,7 +11,11 @@ Conduct forensic investigation of suspicious domains, websites and other dangero
 ![](images/bashrc2.png)
 
 ## Important stuff
- - browsh either takes a long time to start or just doesn't work :/ [https://github.com/browsh-org/browsh/issues/121](https://github.com/browsh-org/browsh/issues/121)
+ - **DEPRECIATED** browsh either takes a long time to start or just doesn't work :/ [https://github.com/browsh-org/browsh/issues/121](https://github.com/browsh-org/browsh/issues/121)
+ - You can now use tor onion urls! (I have upgraded the proxychains version)
+  - This also allows you to access the tor proxy directly with the localhost:5090 localnet exclusion in the proxychains.conf file
+  - `curl -v --proxy socks5h://127.0.0.1:5090 https://3g2upl4pq6kufc4m.onion` (curling the duckduckgo tor url)
+  - Now you do not have to specify the socks proxy and just do `curl https://3g2upl4pq6kufc4m.onion`
 
 ## > **Install** 
 
