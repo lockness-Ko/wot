@@ -2,7 +2,7 @@ FROM ubuntu:21.04
 
 # Install packages
 RUN apt update -y
-RUN DEBIAN_FRONTEND=noninteractive apt install -yq proxychains
+RUN DEBIAN_FRONTEND=noninteractive apt install -yq proxychains4
 RUN apt install wget -y
 ADD ./tools/proxychains.conf /etc/proxychains.conf
 RUN apt install curl -y
