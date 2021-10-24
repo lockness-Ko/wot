@@ -1,4 +1,4 @@
-FROM ubuntu:21.04
+FROM ubuntu:devel
 
 # Install packages
 RUN apt update -y
