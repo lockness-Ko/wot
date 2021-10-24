@@ -20,7 +20,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 
-PS1='${debian_chroot:+($debian_chroot)}\[\033[0;95m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+# PS1='${debian_chroot:+($debian_chroot)}\[\033[0;95m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
@@ -45,6 +45,10 @@ alias l='ls -CF'
 alias lynx="lynx -anonymous -noredir -nolog -restrictions=exec,bookmark_exec,change_exec_perms,exec_frozen,shell,useragent -useragent='wot' -homepage=https://lite.duckduckgo.com/lite https://check.torproject.org/"
 
 #alias vt="vt --proxy http://"
+
+# set prompts :)
+PROMPT="\[\033[0;95m\]%n@%M:%d$>\[\033[00m\]"
+RPROMPT="%*|%?"
 
 cd ~
 clear
