@@ -1,4 +1,4 @@
-# WOT (without a trace)
+# WOT (without a trace) 
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/lockness-Ko/wot#8e0ac7)
 ![GitHub issues](https://img.shields.io/github/issues/lockness-Ko/wot?color=%238b20e3)
