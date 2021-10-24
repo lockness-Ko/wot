@@ -24,7 +24,7 @@ RUN wget https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x
 RUN cd /root && git clone https://github.com/Datalux/Osintgram.git
 RUN cd /root && git clone https://github.com/twintproject/twint.git && cd twint && pip3 install . -r requirements.txt
 RUN cd /root && git clone https://github.com/ReFirmLabs/binwalk.git && cd binwalk && python3 setup.py install
-RUN cd /root && git clone https://github.com/VirusTotal/vt-cli && cd vt-cli && make install
+# RUN cd /root && git clone https://github.com/VirusTotal/vt-cli && cd vt-cli && make install
 
 # Docker in docker!
 RUN DEBIAN_FRONTEND=noninteractive apt -y install apt-transport-https ca-certificates curl gnupg2 software-properties-common
