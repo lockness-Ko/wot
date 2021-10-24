@@ -44,6 +44,8 @@ alias la='ls -A'
 alias l='ls -CF'
 alias lynx="lynx -anonymous -noredir -nolog -restrictions=exec,bookmark_exec,change_exec_perms,exec_frozen,shell,useragent -useragent='wot' -homepage=https://lite.duckduckgo.com/lite https://check.torproject.org/"
 
+#alias vt="vt --proxy http://"
+
 cd ~
 clear
 cat /etc/motd
