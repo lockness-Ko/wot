@@ -24,6 +24,7 @@ RUN wget https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x
 RUN cd /root && git clone https://github.com/Datalux/Osintgram.git
 RUN cd /root && git clone https://github.com/twintproject/twint.git && cd twint && pip3 install . -r requirements.txt
 RUN cd /root && git clone https://github.com/ReFirmLabs/binwalk.git && cd binwalk && python3 setup.py install
+RUN cd /root && git clone https://github.com/VirusTotal/vt-cli && cd vt-cli && make install
 
 # This is a cool hosts file (blocks ads and other stuff) and other cool files
 ADD ./tools/hosts /etc/hosts
