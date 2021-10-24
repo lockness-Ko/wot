@@ -5,8 +5,7 @@ services:
   wottor:
     image: ghcr.io/lockness-ko/wottor:cookie
     network_mode: host
-    ports:
-      - "5090:5090"
+
   wot:
     image: ghcr.io/lockness-ko/wot:banana
     network_mode: host
