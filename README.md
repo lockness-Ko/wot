@@ -44,7 +44,7 @@ How to make it work:
 
 ## NOTE
 
-The second time I tried this, the gcloud console worked and didn't ask for a project. I think the reason was that I was in ephemeral mode.
+The second time I tried this, the gcloud console worked and didn't ask for a project. I think the reason that it wasn't working was that I was in ephemeral mode.
 
 ## > **Tools**
 
