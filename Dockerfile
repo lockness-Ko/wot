@@ -40,3 +40,5 @@ RUN chmod +x /bin/pbash
 
 # Run bash with proxychains for anonymity ;)
 CMD ["/bin/pbash"]
+
+LABEL org.opencontainers.image.description The latest version! banana has zsh and allows for tor urls to be resolved
