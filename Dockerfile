@@ -26,6 +26,14 @@ RUN cd /root && git clone https://github.com/twintproject/twint.git && cd twint 
 RUN cd /root && git clone https://github.com/ReFirmLabs/binwalk.git && cd binwalk && python3 setup.py install
 RUN cd /root && git clone https://github.com/VirusTotal/vt-cli && cd vt-cli && make install
 
+# Docker in docker!
+RUN DEBIAN_FRONTEND=noninteractive apt -y install apt-transport-https ca-certificates curl gnupg2 software-properties-common
+RUN curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
+# not sure if i need to specify DEBIAN_FRONTEND=noninteractive here, just doing it coz i can
+RUN DEBIAN_FRONTEND=noninteractive add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
+RUN DEBIAN_FRONTEND=noninteractive apt update
+RUN DEBIAN_FRONTEND=noninteractive apt install docker-ce -y
+
 # This is a cool hosts file (blocks ads and other stuff) and other cool files
 ADD ./tools/hosts /etc/hosts
 ADD ./tools/bashrc /root/.bashrc
