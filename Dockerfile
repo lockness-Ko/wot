@@ -14,6 +14,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt install git -y
 RUN DEBIAN_FRONTEND=noninteractive apt install python3 -y
 RUN DEBIAN_FRONTEND=noninteractive apt install python3-pip -y
 RUN DEBIAN_FRONTEND=noninteractive apt install python-is-python3 -y
+RUN DEBIAN_FRONTEND=noninteractive apt install zsh -y
 
 # Setup lynx alias
 RUN wget https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/ncat -O /usr/bin/ncat
@@ -25,6 +26,7 @@ RUN cd /root && git clone https://github.com/Datalux/Osintgram.git
 RUN cd /root && git clone https://github.com/twintproject/twint.git && cd twint && pip3 install . -r requirements.txt
 RUN cd /root && git clone https://github.com/ReFirmLabs/binwalk.git && cd binwalk && python3 setup.py install
 # RUN cd /root && git clone https://github.com/VirusTotal/vt-cli && cd vt-cli && make install
+# RUN cd /root && git clone https://github.com/radareorg/radare2 && cd radare2 && sys/install.sh
 
 # This is a cool hosts file (blocks ads and other stuff) and other cool files
 ADD ./tools/hosts /etc/hosts
