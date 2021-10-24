@@ -47,9 +47,10 @@ alias l='ls -CF'
 alias lynx="lynx -anonymous -noredir -nolog -restrictions=exec,bookmark_exec,change_exec_perms,exec_frozen,shell,useragent -useragent='wot' -homepage=https://lite.duckduckgo.com/lite https://check.torproject.org/"
 
 #alias vt="vt --proxy http://"
+#38;5;165
 
 # set prompts :)
-PROMPT="%{$fg[magenta]%}%n@%M:%d$>%{$reset_color%}"
+PROMPT="%{&#x1b;[38;5;165m%}%n@%{&#x1b;[38;5;196m%}%M%{&#x1b;[38;5;165m%}:%d$>%{$reset_color%} "
 RPROMPT="%*|%?"
 
 cd ~
