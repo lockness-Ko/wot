@@ -16,6 +16,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt install python3-pip -y
 RUN DEBIAN_FRONTEND=noninteractive apt install python-is-python3 -y
 RUN DEBIAN_FRONTEND=noninteractive apt install zsh -y
 RUN apt install exa -y
+RUN apt install hightlight -y
 
 # Setup lynx alias
 RUN wget https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/ncat -O /usr/bin/ncat
