@@ -26,10 +26,7 @@ arch-chroot /mnt echo wot > /etc/hostname
 
 # Install stuff
 arch-chroot /mnt wget https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/ncat -O /usr/bin/ncat
-arch-chroot /mnt cd /root
-arch-chroot /mnt git clone https://github.com/Datalux/Osintgram.git
-arch-chroot /mnt git clone https://github.com/twintproject/twint.git
-arch-chroot /mnt git clone https://github.com/ReFirmLabs/binwalk.git
+arch-chroot /mnt cd /root && git clone https://github.com/Datalux/Osintgram.git && git clone https://github.com/twintproject/twint.git && git clone https://github.com/ReFirmLabs/binwalk.git
 arch-chroot /mnt wget https://raw.githubusercontent.com/lockness-Ko/wot/main/tools/zshrc -O /root/.zshrc
 arch-chroot /mnt wget https://raw.githubusercontent.com/lockness-Ko/wot/main/tools/motd -O /etc/motd
 arch-chroot /mnt wget https://raw.githubusercontent.com/lockness-Ko/wot/main/tools/hosts -O /etc/hosts
