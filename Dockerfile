@@ -1,4 +1,4 @@
-FROM archlinux:base
+FROM archlinux:latest
 
 # Install packages
 RUN pacman -Syyuu --noconfirm

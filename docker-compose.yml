@@ -7,7 +7,7 @@ services:
     network_mode: host
 
   wot:
-    image: ghcr.io/lockness-ko/wot:banana
+    image: ghcr.io/lockness-ko/wot:donut
     network_mode: host
     stdin_open: true # docker run -i
     tty: true        # docker run -t
