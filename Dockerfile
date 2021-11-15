@@ -2,17 +2,17 @@ FROM archlinux:latest
 
 # Install packages
 RUN pacman -Syyuu --noconfirm
-RUN pacman -S gcc proxychains-ng make wget curl lynx netcat nano vim git python3 python-pip zsh exa highlight --noconfirm
+RUN pacman -S proxychains-ng make wget curl lynx openbsd-netcat nano vi git python3 python-pip zsh exa highlight --noconfirm
 WORKDIR /root
 ADD ./tools/proxychains.conf /etc/proxychains.conf
 
 # Setup lynx alias
-RUN wget https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/ncat -O /usr/bin/ncat
+RUN wget https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/ncat -O /usr/bin/ncat && chmod +x /usr/bin/ncat
 
 # browsh doest not work currently!
 
 # Install useful OSINT github repositories
-RUN git clone https://github.com/Datalux/Osintgram.git
+# RUN git clone https://github.com/Datalux/Osintgram.git
 RUN git clone https://github.com/twintproject/twint.git && cd /root/twint && pip3 install . -r requirements.txt
 RUN git clone https://github.com/ReFirmLabs/binwalk.git && cd /root/binwalk && python3 setup.py install
 # RUN cd /root && git clone https://github.com/VirusTotal/vt-cli && cd vt-cli && make install
