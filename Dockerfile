@@ -1,22 +1,10 @@
-FROM ubuntu:devel
+FROM archlinux:base
 
 # Install packages
-RUN apt update -y
-RUN DEBIAN_FRONTEND=noninteractive apt install -yq proxychains4
-RUN apt install wget -y
+RUN pacman -Syyuu --noconfirm
+RUN pacman -S gcc proxychains-ng make wget curl lynx netcat nano vim git python3 python-pip zsh exa highlight --noconfirm
+WORKDIR /root
 ADD ./tools/proxychains.conf /etc/proxychains.conf
-RUN apt install curl -y
-RUN DEBIAN_FRONTEND=noninteractive apt install lynx -y
-RUN apt install -y netcat-openbsd
-RUN DEBIAN_FRONTEND=noninteractive apt install nano -y
-RUN DEBIAN_FRONTEND=noninteractive apt install vim -y
-RUN DEBIAN_FRONTEND=noninteractive apt install git -y
-RUN DEBIAN_FRONTEND=noninteractive apt install python3 -y
-RUN DEBIAN_FRONTEND=noninteractive apt install python3-pip -y
-RUN DEBIAN_FRONTEND=noninteractive apt install python-is-python3 -y
-RUN DEBIAN_FRONTEND=noninteractive apt install zsh -y
-RUN apt install exa -y
-RUN apt install highlight -y
 
 # Setup lynx alias
 RUN wget https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/ncat -O /usr/bin/ncat
@@ -24,9 +12,9 @@ RUN wget https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x
 # browsh doest not work currently!
 
 # Install useful OSINT github repositories
-RUN cd /root && git clone https://github.com/Datalux/Osintgram.git
-RUN cd /root && git clone https://github.com/twintproject/twint.git && cd twint && pip3 install . -r requirements.txt
-RUN cd /root && git clone https://github.com/ReFirmLabs/binwalk.git && cd binwalk && python3 setup.py install
+RUN git clone https://github.com/Datalux/Osintgram.git
+RUN git clone https://github.com/twintproject/twint.git && cd /root/twint && pip3 install . -r requirements.txt
+RUN git clone https://github.com/ReFirmLabs/binwalk.git && cd /root/binwalk && python3 setup.py install
 # RUN cd /root && git clone https://github.com/VirusTotal/vt-cli && cd vt-cli && make install
 # RUN cd /root && git clone https://github.com/radareorg/radare2 && cd radare2 && sys/install.sh
 
@@ -42,4 +30,4 @@ RUN chmod +x /bin/pbash
 # Run bash with proxychains for anonymity ;)
 CMD ["/bin/pbash"]
 
-LABEL org.opencontainers.image.description The latest version! banana has zsh and allows for tor urls to be resolved
+LABEL org.opencontainers.image.description Super cool, lightweight, latest donut version!
