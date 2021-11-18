@@ -5,7 +5,6 @@ Welcome!
 Here are some useful commands:
 Web browser
  - `lynx`
- - `browsh` (less secure because it can run js but it looks prettier and can run js sites) THIS DOES NOT WORK CURRENTLY
 
 Networking
  - `nc`
