@@ -47,7 +47,7 @@ docker build -t wot:tag .
 
 ## > WOT OS
 
-**TODO: ** this
+**TODO:** this
 
 ### > **Google Cloud Demo** 
 
