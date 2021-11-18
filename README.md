@@ -45,6 +45,10 @@ docker build -t wot:tag .
 
 **YOU WILL HAVE TO EDIT THE docker-compose.yml FILE TO USE YOUR NEWLY BUILT VERSION**
 
+## > Security/Vulnerability reporting!
+
+WOT is only as secure as I make it with the knowlege I have. If you find anything, refer to SECURITY.md for the security policy! Any help in patching would be great too :)
+
 ## > WOT OS
 
 **TODO:** this
