@@ -2,6 +2,7 @@ FROM archlinux:latest
 
 # Install packages
 RUN pacman -Syyuu --noconfirm
+RUN ln -sf /usr/share/zoneinfo/Australia/Sydney /etc/localtime
 RUN pacman -S proxychains-ng make wget curl lynx openbsd-netcat nano vi git python3 python-pip zsh exa highlight --noconfirm
 WORKDIR /root
 ADD ./tools/proxychains.conf /etc/proxychains.conf
