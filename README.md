@@ -51,7 +51,21 @@ WOT is only as secure as I make it with the knowlege I have. If you find anythin
 
 ## > WOT OS
 
-**TODO:** this
+WOT OS is a custom archlinux installation with:
+ - All the features of the WOT docker image
+ - More security 
+   - you only have to trust your VM provider or your hardware
+   - **TODO:** add disk encryption
+   - Uses torctl and iptables to route all traffic through tor
+   - **TODO:** Use torctl autowipe to wipe memory on shutdown (TBA: installing secure-delete)
+ - **TODO:** Make custom archiso with setup script already on it
+
+### IMPORTANT THINGS TO NOTE!
+ - If you are installing this on hardware, please edit the script as to not format your main partitions (if you are dual booting or want to choose which drive, etc.)
+ - It is easiest to install on a VM 
+   - with qemu, just run `./build_and_run.sh` or `./build_and_run.bat` depending on what OS you are using, you will need qemu installed
+   - then, install git, clone the wot repo, customize the install scripts and run them
+ - **THE SCRIPT CURRENTLY USES GRUB WITH LEGACY BIOS INSTALLATION, THERE HAS BEEN NO TESTING FOR NEWER UEFI BOOTLOADING** feel free to add this though :)
 
 ### > **Google Cloud Demo** 
 
