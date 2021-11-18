@@ -16,10 +16,13 @@ Conduct forensic investigation of suspicious domains, websites and other dangero
   - This also allows you to access the tor proxy directly with the localhost:5090 localnet exclusion in the proxychains.conf file
   - `curl -v --proxy socks5h://127.0.0.1:5090 https://3g2upl4pq6kufc4m.onion` (curling the duckduckgo tor url)
   - Now you do not have to specify the socks proxy and just do `curl https://3g2upl4pq6kufc4m.onion`
+ - Now running on archlinux (faster). You can still use the old versions that run on ubuntu, just supply a command line argument into run-linux with the version:
+  - `./run-linux banana` (this is the newest, non-archlinux version)
+ - Feel free to build
 
 ## > **Install** 
 
-To install simply run clone the repo and type `docker build -t wot .`:
+To install simply run clone the repo and type `./run-linux`
 
 **YOU MUST HAVE TOR PROXY RUNNING ON PORT 9050 ON LOCALHOST FOR THE COFFEE VERSION**
 
@@ -29,6 +32,22 @@ git clone https://github.com/lockness-Ko/wot.git
 cd wot
 ./run-linux
 ```
+
+## > Build
+
+If you want to build your own custom image (with whatever tools you want) go into the project root and type this:
+
+```bash
+docker build -t wot:tag .
+```
+
+(I recommend creating a fork, pulling the forked repo onto the google cloud shell and building it there as it is much faster than building it locally)
+
+**YOU WILL HAVE TO EDIT THE docker-compose.yml FILE TO USE YOUR NEWLY BUILT VERSION**
+
+## > WOT OS
+
+**TODO: ** this
 
 ### > **Google Cloud Demo** 
 
@@ -53,7 +72,7 @@ The second time I tried this, the gcloud console worked and didn't ask for a pro
 ## > **Tools**
 
 In the latest version (🧀 at this time) I have added some tools! Here is an updated list of tools with links to the github repos
- - [Osintgram](https://github.com/Datalux/Osintgram)	|	Instagram OSINT tool
+ - **Currently not implemented!!!** [Osintgram](https://github.com/Datalux/Osintgram)	|	Instagram OSINT tool
  - [binwalk](https://github.com/ReFirmLabs/binwalk)		|	Reverse engineering tool
  - [twint](https://github.com/twintproject/twint)		|	Twitter OSINT tool
 
@@ -70,6 +89,8 @@ In the latest version (🧀 at this time) I have added some tools! Here is an up
    - wot 🍓 `docker pull ghcr.io/lockness-ko/wot:raspberry`
  - Version 1.2
    - wot 🧀 `docker pull ghcr.io/lockness-ko/wot:cheese`
+ - Version 2.0.0!
+   - wot 🍩 `docker pull ghcr.io/lockness-ko/wot:donut`
 
 To pull a release in docker run:
 
