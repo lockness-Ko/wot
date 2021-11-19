@@ -1,3 +1,3 @@
 #! /bin/bash
 
-docker run -it --rm ghcr.io/lockness-ko/wotbuild:donut
+docker run -it --privileged --rm -v $(pwd)/profile:/root/profile ghcr.io/lockness-ko/wotbuild:donut bash
