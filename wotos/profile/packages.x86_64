@@ -19,7 +19,6 @@ lynx
 openbsd-netcat
 python3
 python-pip
-highlight
 tor
 edk2-shell
 memtest86+

@@ -41,9 +41,6 @@ alias egrep='egrep --color=auto'
 
 alias lynx="lynx -anonymous -noredir -nolog -restrictions=exec,bookmark_exec,change_exec_perms,exec_frozen,shell,useragent -useragent='wot' -homepage=https://lite.duckduckgo.com/lite https://check.torproject.org/"
 
-# Syntax highlighting for cat
-alias cat='highlight -O ansi --force'
-
 alias ls='exa -ll'                                                         # ls
 alias l='exa -lbF --git'                                               # list, size, type, git
 alias ll='exa -lbGF --git'                                             # long list
