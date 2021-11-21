@@ -62,6 +62,8 @@ alias tree='exa --tree --level=2'                                         # tree
 PROMPT=$'%{\e[38;5;165m%}%n@%{\e[38;5;196m%}%M%{\e[38;5;165m%}:%d⋟ %{\e[0m%}'
 RPROMPT="%* | %?"
 
+precmd() { print "" }
+
 cd ~
 clear
 cat /etc/motd
