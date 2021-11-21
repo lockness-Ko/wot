@@ -49,23 +49,28 @@ docker build -t wot:tag .
 
 WOT is only as secure as I make it with the knowlege I have. If you find anything, refer to SECURITY.md for the security policy! Any help in patching would be great too :)
 
-## > WOT OS
+## > WOT Linux
 
-WOT OS is a custom archlinux installation with:
+WOT Linux is a custom archlinux installation with:
  - All the features of the WOT docker image
  - More security 
-   - you only have to trust your VM provider or your hardware
+   - you only have to trust your VM provider or your hardware (and the packages that come with WOT Linux, you can see them in wotos/profile/packages_x86_64.conf)
    - **TODO:** add disk encryption
    - Uses torctl and iptables to route all traffic through tor
    - **TODO:** Use torctl autowipe to wipe memory on shutdown (TBA: installing secure-delete)
  - **TODO:** Make custom archiso with setup script already on it
 
 ### IMPORTANT THINGS TO NOTE!
- - If you are installing this on hardware, please edit the script as to not format your main partitions (if you are dual booting or want to choose which drive, etc.)
+ - If you are installing this, please make sure you allocate as little space as you need as it is stored in the RAM
  - It is easiest to install on a VM 
-   - with qemu, just run `./build_and_run.sh` or `./build_and_run.bat` depending on what OS you are using, you will need qemu installed
-   - then, install git, clone the wot repo, customize the install scripts and run them
- - **THE SCRIPT CURRENTLY USES GRUB WITH LEGACY BIOS INSTALLATION, THERE HAS BEEN NO TESTING FOR NEWER UEFI BOOTLOADING** feel free to add this though :)
+   - Just pop the ISO into a VM
+   - Customize the install script
+   - Make the install script executable
+   - Make torctl executable **IMPORTANT**
+   - Run the installer!
+ - The default password for root and the wot user is `areyoudoing`
+
+For more detailed instructions, refer to the v2.1.0 release **this is where you can download the ISO if you do not want to build it**
 
 ### > **Google Cloud Demo** 
 
