@@ -14,6 +14,7 @@ chown "wot:wot" /home/wot/
 # Setup TOR and torctl
 cd /home/wot
 systemctl start tor && systemctl stop tor
+chmod +x /root/torctl/torctl
 ln -sf /root/torctl/torctl /usr/bin/torctl
 torctl start
 
