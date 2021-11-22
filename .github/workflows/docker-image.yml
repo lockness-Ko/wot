@@ -1,0 +1,20 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the current Docker image and push it
+      run: docker build . --file Dockerfile --tag ghcr.io/lockness-ko/wot:latest && echo $CR_PAT | docker login ghcr.io -u lockness-ko --password-stdin && docker push ghcr.io/lockness-ko/wot:latest
+      env:
+        CR_PAT: ${{ secrets.CONTAINER_TOKEN }}
