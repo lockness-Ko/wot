@@ -20,5 +20,7 @@ openbsd-netcat
 python3
 python-pip
 tor
+sddm
+xfce4
 edk2-shell
 memtest86+

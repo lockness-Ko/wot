@@ -10,6 +10,8 @@ mkdir -p /home/wot/.gnupg
 cp -r /root/.gnupg /home/wot/.gnupg/**
 chown "wot:wot" /home/wot/**
 chown "wot:wot" /home/wot/
+echo "wot:areyoudoing" | chpasswd
+sudo -u wot chsh -s $(which zsh)
 
 # Setup TOR and torctl
 cd /home/wot

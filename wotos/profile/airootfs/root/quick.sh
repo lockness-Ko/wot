@@ -5,12 +5,14 @@
 mount -o remount,size=512M /run/archiso/cowspace
 useradd -m wot
 echo "wot ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
+echo "wot:areyoudoing" | chpasswd
 cd /home/wot
 systemctl start tor && systemctl stop tor
 chmod +x /root/torctl/torctl
 ln -sf /root/torctl/torctl /usr/bin/torctl
 torctl start
-out=`curl https://check.torproject.org/api/ip`;if [[ $out == *"true"* ]]; then;echo "torctl is working, continuing";else;echo "torctl NOT WORKING! please manually configure before trying again";exit;fi
+out=`curl https://check.torproject.org/api/ip`;
+if [[ $out == *"true"* ]]; then;echo "torctl is working, continuing";else;echo "torctl NOT WORKING! please manually configure before trying again";exit;fi
 pacman-key --init
 echo -e 'Server = http://mirror.rackspace.com/archlinux/$repo/os/$arch\r\nServer = https://mirror.rackspace.com/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
 echo "hkp://keyserver.pgp.com" >> /etc/pacman.d/gnupg/gpg.conf
