@@ -47,5 +47,5 @@ timedatectl set-ntp true
 
 wget -O /home/wot/.zshrc https://raw.githubusercontent.com/lockness-Ko/wot/main/tools/zshrc
 
-# Go into the wot user
-sudo -u wot /usr/bin/zsh
+# Go into the desktop
+systemctl enable --now sddm
