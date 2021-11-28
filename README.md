@@ -9,6 +9,9 @@ Conduct forensic investigation of suspicious domains, websites and other dangero
 
 ![](images/bashrc.png)
 ![](images/bashrc2.png)
+![](images/mobile.png)
+
+
 
 ## Important stuff
  - **DEPRECIATED** browsh either takes a long time to start or just doesn't work :/ [https://github.com/browsh-org/browsh/issues/121](https://github.com/browsh-org/browsh/issues/121)
