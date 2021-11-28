@@ -11,8 +11,6 @@ Conduct forensic investigation of suspicious domains, websites and other dangero
 ![](images/bashrc2.png)
 ![](images/mobile.png)
 
-
-
 ## Important stuff
  - **DEPRECIATED** browsh either takes a long time to start or just doesn't work :/ [https://github.com/browsh-org/browsh/issues/121](https://github.com/browsh-org/browsh/issues/121)
  - You can now use tor onion urls! (I have upgraded the proxychains version)
@@ -62,6 +60,20 @@ WOT Linux is a custom archlinux installation with:
    - Uses torctl and iptables to route all traffic through tor
    - **TODO:** Use torctl autowipe to wipe memory on shutdown (TBA: installing secure-delete)
  - **TODO:** Make custom archiso with setup script already on it
+
+### Mobile installation
+
+To get WOT working on mobile (android, sorry IOS users) I used [termux](https://play.google.com/store/apps/details?id=com.termux&hl=en_AU&gl=US) and ran these commands:
+ - `pkg update`
+ - `pkg install unstable-repo`
+ - `pkg install qemu-system-x86_64`
+ - `wget https://github.com/lockness-Ko/wot/releases/download/v2.1.1/wot-2.1.1-x86_64.iso`
+ - `qemu-system-x86_64 -cdrom wot-2.1.1-x86_64.iso -boot d -m 3G -smp 5 -nographic`
+   - This will bring up the bios menu
+   - As soon as it comes up, press tab and type
+   - ` console=ttyS0` (including the space at the start)
+   - and press enter
+   - this will print the entire boot process to the console and make it work
 
 ### IMPORTANT THINGS TO NOTE!
  - If you are installing this, please make sure you allocate as little space as you need as it is stored in the RAM
