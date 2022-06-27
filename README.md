@@ -4,7 +4,7 @@
 ![GitHub issues](https://img.shields.io/github/issues/lockness-Ko/wot?color=%238b20e3)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/lockness-Ko/wot?color=%238e0ac7)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/lockness-Ko/wot?color=%238b20e3)
-
+ 
 Conduct forensic investigation of suspicious domains, websites and other dangerous thing without the fear of being infected! A docker image for hiding yourself using tor as a proxy :)
 
 ![](images/bashrc.png)
